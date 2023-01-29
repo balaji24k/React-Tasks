@@ -2,13 +2,24 @@ import "./ExpenseItems.css";
 import ExpenseDate from "./ExpenseDate";
 import ExpenseDetails from "./ExpenseDetails";
 import Card from "../UI/Card";
+import { useState } from "react";
 
 const ExpenseItems = (props) => {
+
   const deleteButton = (e) => {
         
     let item = e.target.parentElement;
+    console.log(item)
     item.remove()
     
+  }
+
+  const [name,setTitle] = useState(props.name)
+  const [amount,setAmount] = useState(props.amount)
+
+  const editButton = (e) => {
+    setTitle("Updated!")
+    setAmount("$100")
   }
 
   return (
@@ -16,15 +27,18 @@ const ExpenseItems = (props) => {
     <Card className="expense-item">
       <ExpenseDate date={props.date}></ExpenseDate>
       <div className="expense-item__description">
-        <h2>{props.name}</h2>
+        <h2>{name}</h2>
+
         <ExpenseDetails
           LocationOfExpenditure={props.LocationOfExpenditure}
-          amount={props.amount}
+          amount={amount}
           >
         </ExpenseDetails>
+
       </div>
 
       <button onClick={deleteButton} >Delete Expense</button>
+      <button onClick={editButton} >Edit Expense</button>
 
     </Card>
   );
