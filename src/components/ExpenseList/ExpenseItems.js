@@ -37,8 +37,8 @@ const ExpenseItems = (props) => {
 
       </div>
 
-      <button onClick={deleteButton} >Delete Expense</button>
-      <button onClick={editButton} >Edit Expense</button>
+      <button onClick={deleteButton} > Delete Expense</button>
+      <button onClick={editButton} > Edit Expense</button>
 
     </Card>
   );

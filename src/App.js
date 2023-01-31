@@ -1,6 +1,7 @@
 // import ExpenseItems from "./components/ExpenseItems";when we use maps
 // import React from 'react'; if we write code in react object
 import Expenses from "./components/ExpenseList/Expenses";
+import ExpenseForm from "./components/ExpenseList/ExpenseForm";
 
 const App = () => {
   const expensesData = [
@@ -45,9 +46,8 @@ const App = () => {
     <div>
       <h1>let's start</h1>
       <h2>ExpenseItems Details</h2>
-      {/* {expenses.map((any) => (
-        <ExpenseItems data={any}></ExpenseItems>
-      ))} */}
+      
+      <ExpenseForm></ExpenseForm>
       <Expenses expenses={expensesData} />
       {/* return React.createElement('div',{},
   React.createElement(Expenses,{items:expenses})); react object code */}
