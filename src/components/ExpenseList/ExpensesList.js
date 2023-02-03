@@ -13,7 +13,7 @@ const ExpensesList = props => {
 
 
   else if (props.items.length === 1) {
-    message=<p>Only single Expense here. Please add more...</p>
+    message=<p className="expenses-list__fallback">Only single Expense here. Please add more...</p>
 
   }
 
