@@ -15,14 +15,14 @@ const dummyExpenses = [
     id: "bl",
     title: "Shopping",
     amount: 5000,
-    date: new Date(2022, 10, 12),
+    date: new Date(2021, 10, 12),
     // LocationOfExpenditure: "Trends",
   },
   {
     id: "ml",
     title: "Movie",
     amount: 1000,
-    date: new Date(2022, 6, 13),
+    date: new Date(2020, 6, 13),
     // LocationOfExpenditure: "Imax Hyd",
   },
   {
@@ -30,6 +30,13 @@ const dummyExpenses = [
     title: "Tour",
     amount: 20000,
     date: new Date(2022, 4, 12),
+    // LocationOfExpenditure: "goa trip",
+  },
+  {
+    id: "xl",
+    title: "Dinner",
+    amount: 1200,
+    date: new Date(2021, 8, 12),
     // LocationOfExpenditure: "goa trip",
   },
 
